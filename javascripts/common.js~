@@ -1,0 +1,26 @@
+// JavaScript Document
+$(document).ready(function(){
+	$('ul#navTop ul').wrap('<div class="wrap-0" />').wrap('<div class="wrap-1" />').wrap('<div class="wrap-2" />');
+	$('ul#navTop li ul li:last-child').addClass('last');
+	
+	/*$('ul#navTop li').hover(function(){
+		$(this).find('.wrap-0').fadeIn();
+		$(this).find('ul').fadeIn();
+	},function (){
+		$(this).find('.wrap-0').fadeOut();
+		$(this).find('ul').fadeOut();
+		}
+	);*/
+	
+	$('#slider').bxSlider({
+	 mode: 'fade',
+	 prevText : 'Prev Page',
+	 nextText : 'Next Page',
+	 infiniteLoop: false,
+	 auto:true,
+	 mode:'horizontal',
+	 easing: 'jswing',
+	 hideControlOnEnd: true
+	 
+	});
+});
